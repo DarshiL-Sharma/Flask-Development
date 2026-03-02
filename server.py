@@ -6,6 +6,12 @@ print(random.__name__)
 print(__name__)
 
 
+
+@app.route('/bye')
+def bye():
+    return 'Bye'
+
+
 @app.route('/')
 def hello_world():
     return 'Hello,World!'
